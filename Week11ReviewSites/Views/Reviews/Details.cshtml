@@ -9,66 +9,91 @@
 <div>
     <h4>Review</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name_of_Item)
-        </dt>
+    
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="~/Images/headerimg3.png" alt="...">
+            <div class="caption">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Category.Name_of_Item)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name_of_Item)
-        </dd>
+                    <dd>
+                        <h3>
+                            @Html.DisplayFor(model => model.Category.Name_of_Item)
+                        </h3>
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+                    <dd>
+                        <p>
+                            @Html.DisplayFor(model => model.Title)
+                        </p>
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Content)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+                    <dd>
+                        <p>
+                            @Html.DisplayFor(model => model.Content)
+                        </p>
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.PublishDate)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PublishDate)
-        </dd>
+                    <dd>
+                        <p>
+                            @Html.DisplayFor(model => model.PublishDate)
+                        </p>
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+                    <dd>
+                        <p>
+                            @Html.DisplayFor(model => model.Name)
+                        </p>
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Location)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Location)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Location)
-        </dd>
+                    <dd>
+                        <p>
+                            @Html.DisplayFor(model => model.Location)
+                        </p>
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating_out_of)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Rating_out_of)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Rating_out_of)
-        </dd>
+                    <dd>
+                        <p>
+                            @Html.DisplayFor(model => model.Rating_out_of)
+                        </p>
+                    </dd>
 
-    </dl>
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+                <p><a href="https://support.apple.com/" class="btn btn-primary" role="button">Need Help?</a></p>
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
